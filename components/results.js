@@ -463,170 +463,170 @@ return (
 }
 
 const styles = {
-container: {
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  padding: '20px',
-  backgroundColor: 'white',
-  marginTop: '400px'
-},
-topSection: {
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  width: '100%',
-  marginBottom: '20px',
-},
-titleBox: {
-  width: '100%',
-  textAlign: 'center',
-  padding: '10px',
-  backgroundColor: '#FFD580',
-  borderRadius: '10px',
-  marginBottom: '20px',
-},
-title: {
-  fontSize: '24px',
-  margin: '0 0 10px 0',
-},
-subtitle: {
-  fontSize: '16px',
-},
-imageAndTraits: {
-  display: 'flex',
-  justifyContent: 'center',
-  width: '100%',
-},
-phenotypeImage: {
-  maxWidth: '200px',
-  maxHeight: '250px',
-  marginRight: '20px',
-},
-traitsContainer: {
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'space-between',
-},
-typeBox: {
-  textAlign: 'left',
-  padding: '10px',
-  backgroundColor: '#FFD580',
-  borderRadius: '10px',
-  marginBottom: '10px',
-},
-typeTitle: {
-  fontSize: '18px',
-  margin: '0 0 10px 0',
-},
-typeSubtitle: {
-  fontSize: '14px',
-},
-continueBtn: {
-  backgroundColor: '#FFD580',
-  color: 'black',
-  border: 'none',
-  padding: '10px 20px',
-  borderRadius: '10px',
-  cursor: 'pointer',
-  fontSize: '16px',
-  marginTop: '20px',
-},
-scoresContainer: {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(2, 1fr)',
-  gap: '50px',
-  width: '70%',
-  marginBottom: '20px',
-},
-scoreBox: {
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-  padding: '20px',
-  backgroundColor: '#FFD580',
-  borderRadius: '10px',
-  cursor: 'pointer',
-  width: '100%',
-},
-scoreContent: {
-  display: 'flex',
-  justifyContent: 'space-between',
-  width: '100%',
-  alignItems: 'center',
-  marginBottom: '10px',
-  columnGap: "30px"
-},
-scoreLeft: {
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'flex-start',
-  
-},
-scoreRight: {
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'flex-start',
-  textAlign: "center",
-},
-scoreTitle: {
-  fontSize: '18px',
-  marginBottom: '10px',
-  textAlign: "center",
-  fontWeight: "bold",
-},
-scoreValue: {
-  fontSize: '24px',
-  textAlign: "center",
-},
-scoreDescription: {
-  display: 'flex',
-  flexDirection: 'column',
-  textAlign: 'left',
-  width: '100%',
-},
-scoreHeading: {
-  fontSize: '14px',
-  textAlign: "center",
-},
-modalOverlay: {
-  position: 'fixed',
-  top: '0',
-  left: '0',
-  width: '100%',
-  height: '100%',
-  backgroundColor: 'rgba(0,0,0,0.5)',
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-},
-modalContent: {
-  backgroundColor: '#FFD580',
-  padding: '20px',
-  borderRadius: '10px',
-  width: '80%',
-  maxWidth: '500px',
-  textAlign: 'center',
-  position: 'relative',
-},
-closeBtn: {
-  position: 'absolute',
-  top: '10px',
-  right: '10px',
-  backgroundColor: 'transparent',
-  border: 'none',
-  fontSize: '20px',
-  cursor: 'pointer',
-},
-subHeading: {
-  textAlign: 'center', // Ensure this property is set for centering
-  fontSize: '20px',
-  fontWeight: "bold",
-  margin: "auto"
-},
-};
-
+  container: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    minHeight: '100vh',
+    padding: '20px',
+    backgroundColor: 'white',
+  },
+  topSection: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    width: '100%',
+    marginBottom: '20px',
+  },
+  titleBox: {
+    width: '100%',
+    textAlign: 'center',
+    padding: '10px',
+    backgroundColor: '#FFD580',
+    borderRadius: '10px',
+    marginBottom: '20px',
+  },
+  title: {
+    fontSize: '24px',
+    margin: '0 0 10px 0',
+  },
+  subtitle: {
+    fontSize: '16px',
+  },
+  imageAndTraits: {
+    display: 'flex',
+    justifyContent: 'center',
+    width: '100%',
+  },
+  phenotypeImage: {
+    maxWidth: '200px',
+    maxHeight: '250px',
+    marginRight: '20px',
+  },
+  traitsContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+  },
+  typeBox: {
+    textAlign: 'left',
+    padding: '10px',
+    backgroundColor: '#FFD580',
+    borderRadius: '10px',
+    marginBottom: '10px',
+  },
+  typeTitle: {
+    fontSize: '18px',
+    margin: '0 0 10px 0',
+  },
+  typeSubtitle: {
+    fontSize: '14px',
+  },
+  continueBtn: {
+    backgroundColor: '#FFD580',
+    color: 'black',
+    border: 'none',
+    padding: '10px 20px',
+    borderRadius: '10px',
+    cursor: 'pointer',
+    fontSize: '16px',
+    marginTop: '20px',
+  },
+  scoresContainer: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(2, 1fr)',
+    gap: '50px',
+    width: '70%',
+    marginBottom: '20px',
+  },
+  scoreBox: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: '20px',
+    backgroundColor: '#FFD580',
+    borderRadius: '10px',
+    cursor: 'pointer',
+    width: '100%',
+  },
+  scoreContent: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    width: '100%',
+    alignItems: 'center',
+    marginBottom: '10px',
+    columnGap: "30px"
+  },
+  scoreLeft: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    
+  },
+  scoreRight: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    textAlign: "center",
+  },
+  scoreTitle: {
+    fontSize: '18px',
+    marginBottom: '10px',
+    textAlign: "center",
+    fontWeight: "bold",
+  },
+  scoreValue: {
+    fontSize: '24px',
+    textAlign: "center",
+  },
+  scoreDescription: {
+    display: 'flex',
+    flexDirection: 'column',
+    textAlign: 'left',
+    width: '100%',
+  },
+  scoreHeading: {
+    fontSize: '14px',
+    textAlign: "center",
+  },
+  modalOverlay: {
+    position: 'fixed',
+    top: '0',
+    left: '0',
+    width: '100%',
+    height: '100%',
+    backgroundColor: 'rgba(0,0,0,0.5)',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  modalContent: {
+    backgroundColor: '#FFD580',
+    padding: '20px',
+    borderRadius: '10px',
+    width: '80%',
+    maxWidth: '500px',
+    textAlign: 'center',
+    position: 'relative',
+  },
+  closeBtn: {
+    position: 'absolute',
+    top: '10px',
+    right: '10px',
+    backgroundColor: 'transparent',
+    border: 'none',
+    fontSize: '20px',
+    cursor: 'pointer',
+  },
+  subHeading: {
+    textAlign: 'center', // Ensure this property is set for centering
+    fontSize: '20px',
+    fontWeight: "bold",
+    margin: "auto"
+  },
+  };
 
   
   //   return (
