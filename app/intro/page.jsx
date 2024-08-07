@@ -19,7 +19,7 @@ export default function Intro() {
   const [showScenario, setShowScenario] = useState(false);
 
   const messages = [
-    "Hi! Im Beri the Budgetor, your Article 26 personal finance member",
+    "Hi! Im Beri the Budgetor, your Article 26 personal finance mentor",
     "For now, Ill be your tour guide. Lets get to know each other better!",
     "If you have 10 minutes to set some things up, well be well on our way to financial success",
     "To start, were going to learn about Financial Phenotypes. Then youll find out what yours is",
@@ -36,7 +36,7 @@ export default function Intro() {
 
   const ScenarioOne = [
     "A financial phenotype, or money personality, describes your personal relationship with money and encompasses who you are as a spender",
-    "Shown below are our eight Financial Phenotypes, each with their own distinct traits and behaviors",
+    "We have eight Financial Phenotypes, each with their own distinct traits and behaviors",
     "These traits include your emotional outlook and strategic approach with money, as well as the extent to which your spending is influenced by internal and external factors",
   ];
 
