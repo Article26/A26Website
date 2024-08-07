@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import { createClient } from "@/utils/supabase/client";
 
 import IPFImage from "../assets/Berries/Pomegranate.png";
 import IPIImage from "../assets/Berries/Gooseberry.png";
@@ -295,7 +296,48 @@ setSingleFactor(knowledgeScore, setKnowledgeDesc, scoreDescriptions[5]);
 
   // const newObj2 = {influence: influence, emotion: emotion, strategy:strategy};
   // characterScores = JSON.stringify(newObj2);
-}, []);
+  const sendResultsToSupabase = async () => {
+    const supabase = createClient();
+    const { error } = await supabase
+      .from('Responses') 
+      .insert([
+        {
+          factorScores: {
+            influenceScore,
+            knowledgeScore,
+            planningScore,
+            spendingHabitsScore,
+            riskToleranceScore,
+            feelingScore,
+            selectedInfluence,
+            selectedEmotion,
+            selectedStrategy,
+          },
+          phenotype: phenotypeResults.title, // Assuming title represents the phenotype
+          userID: null // Adjust if you have a userID to link
+        }
+      ]);
+
+    if (error) {
+      console.error("Error inserting data:", error);
+    } else {
+      console.log("Data inserted successfully");
+    }
+  };
+
+  sendResultsToSupabase();
+}, [
+  influenceScore, 
+  knowledgeScore, 
+  planningScore, 
+  spendingHabitsScore, 
+  riskToleranceScore, 
+  feelingScore, 
+  selectedInfluence, 
+  selectedEmotion, 
+  selectedStrategy,
+  phenotypeResults
+]);
 
 const handleBoxClick = (content) => {
   setModalContent(content);
