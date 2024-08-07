@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,Suspense } from "react";
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import Image from "next/image";
@@ -12,7 +12,7 @@ const resultMSG = [
   "When it comes to financial decisions and management..."
 ];
 
-const ResultPage = () => {
+const ResultPageContent = () => {
   const searchParams = useSearchParams();
   const [messageIndex, setMessageIndex] = useState(0);
   const [selectedInfluence, setSelectedInfluence] = useState('');
@@ -174,6 +174,12 @@ const ResultPage = () => {
     </div>
   );
 };
+
+const ResultPage = () => (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ResultPageContent />
+    </Suspense>
+  );
 
 const styles = {
   container: {
