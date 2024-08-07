@@ -1,7 +1,8 @@
 'use client'
 import React, { useState } from 'react';
-import { login, signup } from './actions';
+import Link from 'next/link'; // Import Link
 import Image from 'next/image';
+import { login, signup } from './actions';
 import article26logo from "@/assets/login-images/A26Logo.png";
 
 export default function LoginPage() {
@@ -52,6 +53,9 @@ export default function LoginPage() {
           <button formAction={signup} style={styles.submitButton}>Sign up</button>
         </form>
       )}
+      <Link href="/intro" passHref>
+        <button style={styles.guestButton}>Guest User</button>
+      </Link>
       <style jsx>{`
         input::placeholder {
           color: black; /* Set placeholder text color to black */
@@ -132,5 +136,15 @@ const styles = {
     backgroundColor: '#FFD580',
     color: 'black',
     cursor: 'pointer',
+  },
+  guestButton: {
+    padding: '10px 60px', // Increased width
+    fontSize: '16px',
+    borderRadius: '5px',
+    border: 'none',
+    backgroundColor: '#FFD580',
+    color: 'black',
+    cursor: 'pointer',
+    marginTop: '20px', // Add some margin to separate from the other buttons
   },
 };

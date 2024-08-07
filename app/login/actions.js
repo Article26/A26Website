@@ -23,7 +23,7 @@ export async function login(formData) {
   }
 
   revalidatePath('/', 'layout')
-  redirect('/quiz')
+  redirect('/intro')
 }
 
 export async function signup(formData) {
@@ -50,5 +50,5 @@ export async function signup(formData) {
   }
 
   revalidatePath('/', 'layout')
-  redirect('/quiz')
+  redirect('/login')
 }

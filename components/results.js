@@ -339,7 +339,7 @@ return (
             <div style={styles.scoreValue}>{riskToleranceScore}</div>
           </div>
           <div style={styles.scoreRight}>
-            <div style={styles.scoreTitle}>{riskDesc.subHeading}</div>
+            <div style={styles.subHeading}>{riskDesc.subHeading}</div>
             <div style={styles.scoreHeading}>{riskDesc.heading}</div>
           </div>
         </div>
@@ -351,7 +351,7 @@ return (
             <div style={styles.scoreValue}>{feelingScore}</div>
           </div>
           <div style={styles.scoreRight}>
-            <div style={styles.scoreTitle}>{feelingDesc.subHeading}</div>
+            <div style={styles.subHeading}>{feelingDesc.subHeading}</div>
             <div style={styles.scoreHeading}>{feelingDesc.heading}</div>
           </div>
         </div>
@@ -363,7 +363,7 @@ return (
             <div style={styles.scoreValue}>{spendingHabitsScore}</div>
           </div>
           <div style={styles.scoreRight}>
-            <div style={styles.scoreTitle}>{spendingDesc.subHeading}</div>
+            <div style={styles.subHeading}>{spendingDesc.subHeading}</div>
             <div style={styles.scoreHeading}>{spendingDesc.heading}</div>
           </div>
         </div>
@@ -375,7 +375,7 @@ return (
             <div style={styles.scoreValue}>{planningScore}</div>
           </div>
           <div style={styles.scoreRight}>
-            <div style={styles.scoreTitle}>{planningDesc.subHeading}</div>
+            <div style={styles.subHeading}>{planningDesc.subHeading}</div>
             <div style={styles.scoreHeading}>{planningDesc.heading}</div>
           </div>
         </div>
@@ -387,7 +387,7 @@ return (
             <div style={styles.scoreValue}>{influenceScore}</div>
           </div>
           <div style={styles.scoreRight}>
-            <div style={styles.scoreTitle}>{influenceDesc.subHeading}</div>
+            <div style={styles.subHeading}>{influenceDesc.subHeading}</div>
             <div style={styles.scoreHeading}>{influenceDesc.heading}</div>
           </div>
         </div>
@@ -399,7 +399,7 @@ return (
             <div style={styles.scoreValue}>{knowledgeScore}</div>
           </div>
           <div style={styles.scoreRight}>
-            <div style={styles.scoreTitle}>{knowledgeDesc.subHeading}</div>
+            <div style={styles.subHeading}>{knowledgeDesc.subHeading}</div>
             <div style={styles.scoreHeading}>{knowledgeDesc.heading}</div>
           </div>
         </div>
@@ -427,6 +427,7 @@ container: {
   alignItems: 'center',
   padding: '20px',
   backgroundColor: 'white',
+  marginTop: '400px'
 },
 topSection: {
   display: 'flex',
@@ -513,6 +514,7 @@ scoreContent: {
   width: '100%',
   alignItems: 'center',
   marginBottom: '10px',
+  columnGap: "30px"
 },
 scoreLeft: {
   display: 'flex',
@@ -530,6 +532,7 @@ scoreTitle: {
   fontSize: '18px',
   marginBottom: '10px',
   textAlign: "center",
+  fontWeight: "bold",
 },
 scoreValue: {
   fontSize: '24px',
@@ -573,6 +576,12 @@ closeBtn: {
   border: 'none',
   fontSize: '20px',
   cursor: 'pointer',
+},
+subHeading: {
+  textAlign: 'center', // Ensure this property is set for centering
+  fontSize: '20px',
+  fontWeight: "bold",
+  margin: "auto"
 },
 };
 
