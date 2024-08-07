@@ -19,16 +19,16 @@ export default function Intro() {
   const [showScenario, setShowScenario] = useState(false);
 
   const messages = [
-    "Hi! I&apos;m Beri the Budgetor, your Article 26 personal finance member",
-    "For now, I&apos;ll be your tour guide. Let&apos;s get to know each other better!",
-    "If you have 10 minutes to set some things up, we&apos;ll be well on our way to financial success",
-    "To start, we&apos;re going to learn about Financial Phenotypes. Then you&apos;ll find out what yours is",
+    "Hi! Im Beri the Budgetor, your Article 26 personal finance member",
+    "For now, Ill be your tour guide. Lets get to know each other better!",
+    "If you have 10 minutes to set some things up, well be well on our way to financial success",
+    "To start, were going to learn about Financial Phenotypes. Then youll find out what yours is",
     "Ready to learn?",
   ];
 
   const finalMessages = [
     "Hello again friend! I heard you want to find out your financial phenotype.",
-    "That’s amazing! All you have to do is live your life as you normally would and I&apos;ll analyze your behavior...",
+    "That’s amazing! All you have to do is live your life as you normally would and Ill analyze your behavior...",
     "Allow me to set the scene: Today marks the day that you are moving to a new city to start fresh and (hopefully) find success...",
     "You are going to need to secure an income and maintain expenses while making choices that keep you and your wallet happy",
     "During the simulation, remember to be yourself! There are no wrong or right answers"
@@ -45,7 +45,7 @@ export default function Intro() {
     "Your phenotype can change over time as you experience new life events, develop new spending habits and reach new goals",
     "Achieving financial well-being involves balancing your emotions, strategies, and influences with your financial goals and values.",
     "Discovering your financial personality is the first step toward making informed decisions and achieving financial success.",
-    "Let&apos;s play a game to find out your financial phenotype!",
+    "Lets play a game to find out your financial phenotype!",
   ];
 
   const handleContinue = () => {
@@ -148,7 +148,7 @@ export default function Intro() {
               onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'white'}
             >
               <h3>Internal</h3>
-              <p>Individuals with an internal influence tend to base their financial decisions on their own reasoning and principles. They, more often than not, rely on personal judgment and are less swayed by external factors such as social pressure, market trends, or others&apos; opinions</p>
+              <p>Individuals with an internal influence tend to base their financial decisions on their own reasoning and principles. They, more often than not, rely on personal judgment and are less swayed by external factors such as social pressure, market trends, or others opinions</p>
             </div>
             <div
               style={styles.box}
@@ -230,10 +230,10 @@ export default function Intro() {
         <div style={styles.infoSection}>
           <div style={styles.orangeBar}>Phenotypes</div>
           <ul style={styles.numberedList}>
-            <li>Understanding a financial personality can help individuals, financial advisors, and planners tailor financial advice and strategies to better suit their clients&apos; needs and tendencies</li>
-            <li>It&apos;s essential to acknowledge that these personalities can change over time and may be influenced by life events and circumstances</li>
-            <li>Financial well-being often involves finding a balance between emotions, strategies, and external influences that align with one&apos;s financial goals and values</li>
-            <li>Let&apos;s play a game to find out yours!</li>
+            <li>Understanding a financial personality can help individuals, financial advisors, and planners tailor financial advice and strategies to better suit their clients needs and tendencies</li>
+            <li>Its essential to acknowledge that these personalities can change over time and may be influenced by life events and circumstances</li>
+            <li>Financial well-being often involves finding a balance between emotions, strategies, and external influences that align with ones financial goals and values</li>
+            <li>Lets play a game to find out yours!</li>
           </ul>
           <button style={styles.nextButton} onClick={handleNext}>Next</button>
         </div>
@@ -249,7 +249,7 @@ export default function Intro() {
             </button>
           ) : (
             <Link href="/quiz">
-              <button style={styles.button}>Let&apos;s Play</button> {/* Use Link to navigate */}
+              <button style={styles.button}>Lets Play</button> {/* Use Link to navigate */}
             </Link>
           )}
                   </>
